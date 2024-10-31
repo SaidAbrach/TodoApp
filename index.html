@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <!-- Links the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Links the external JavaScript file and ensures it loads after the HTML -->
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Main title of the app -->
+    <h1>Todo App</h1>
+    <!-- Wrapper for the input form and todo list -->
+    <div class="wrapper">
+      <!-- Form for adding todos -->
+      <form>
+        <!-- Input field for todo item with placeholder text -->
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Write anything and hit enter to add"
+          autocomplete="off"
+        />
+        <!-- Button to submit the form -->
+        <button id="add-button">ADD</button>
+      </form>
+      <!-- Unordered list that will hold the todo items -->
+      <ul id="todo-list"></ul>
+    </div>
+  </body>
+</html>
